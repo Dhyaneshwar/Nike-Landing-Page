@@ -16,6 +16,7 @@ import {
   shoe5,
   shoe6,
   shoe7,
+  shoe8,
   thumbnailShoe1,
   thumbnailShoe2,
   thumbnailShoe3,
@@ -147,4 +148,37 @@ export const socialMedia = [
   { src: facebook, alt: "facebook logo" },
   { src: twitter, alt: "twitter logo" },
   { src: instagram, alt: "instagram logo" },
+];
+
+export const slideShow = [
+  {
+    imgURL: shoe8,
+    noBackground: true,
+  },
+  {
+    imgURL: bigShoe1,
+  },
+  {
+    imgURL: shoe4,
+    noBackground: true,
+  },
+  {
+    imgURL: bigShoe2,
+  },
+  {
+    imgURL: shoe5,
+    noBackground: true,
+  },
+  {
+    imgURL: bigShoe3,
+  },
+
+  {
+    imgURL: shoe6,
+    noBackground: true,
+  },
+  {
+    imgURL: shoe7,
+    noBackground: true,
+  },
 ];
