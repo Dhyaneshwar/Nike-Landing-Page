@@ -1,19 +1,19 @@
 import { star } from "../assets/icons";
 
-const PopularProductCard = ({ imgURL, name, price }) => {
+const PopularProductCard = ({ imgURL, name, price, rating }) => {
   return (
-    <div className="flex w-full flex-1 flex-col items-center justify-center max-sm:w-full">
+    <div className="group flex w-full flex-1 flex-col items-center justify-center py-6 transition-all hover:scale-105 hover:rounded-3xl hover:bg-hero hover:shadow-lg max-sm:w-full">
       <img src={imgURL} alt={name} className="h-[282px] w-[282px]" />
-      <div className="mt-8 flex justify-start gap-2.5">
+      <div className="mt-8 flex justify-start gap-2.5 transition-all group-hover:scale-110">
         <img src={star} alt="rating icon" width={24} height={24} />
         <p className="font-montserrat text-xl leading-normal text-slate-gray">
-          (4.5)
+          ({rating})
         </p>
       </div>
-      <h3 className="mt-2 font-palanquin text-2xl font-semibold leading-normal">
+      <h3 className="mt-2 font-palanquin text-2xl font-semibold leading-normal transition-all group-hover:scale-110 group-hover:text-coral-red">
         {name}
       </h3>
-      <p className="mt-2 font-montserrat text-2xl font-semibold leading-normal text-coral-red">
+      <p className="mt-2 font-montserrat text-2xl font-semibold leading-normal text-coral-red transition-all group-hover:scale-110 group-hover:text-black">
         {price}
       </p>
     </div>

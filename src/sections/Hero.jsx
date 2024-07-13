@@ -18,7 +18,12 @@ const Hero = () => {
             The New Arrival
           </span>
           <br />
-          <span className="mt-3 inline-block text-coral-red">Nike</span> Shoes
+          <span className="relative inline-block transition-all hover:before:absolute hover:before:-inset-0 hover:before:-bottom-3 hover:before:z-20 hover:before:block hover:before:-skew-y-3 hover:before:bg-pink-500">
+            <span className="relative z-30 mt-3 inline-block text-coral-red hover:text-white">
+              Nike
+            </span>
+          </span>{" "}
+          Shoes
         </h1>
         <p className="mb-14 mt-6 w-96 font-montserrat text-lg leading-8 text-slate-gray sm:max-w-sm">
           Discover stylish Nike arrivals, quality comfort, and innovation for

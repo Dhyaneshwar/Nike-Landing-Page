@@ -14,12 +14,13 @@ const PopularProducts = () => {
         </p>
       </div>
       <div className="mt-16 grid grid-cols-1 items-center justify-center gap-14 sm:grid-cols-2 sm:gap-6 md:grid-cols-3 lg:grid-cols-4">
-        {products.map(({ imgURL, name, price }, index) => (
+        {products.map(({ imgURL, name, price, rating }, index) => (
           <PopularProductCard
             key={index}
             imgURL={imgURL}
             name={name}
             price={price}
+            rating={rating}
           />
         ))}
       </div>
