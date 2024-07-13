@@ -27,7 +27,7 @@ const SlideShow = () => {
             {slideShow.map(({ imgURL, noBackground }, index) => (
               <div
                 key={index}
-                className={`${noBackground ? "" : "rounded-3xl bg-primary bg-hero bg-cover bg-center"} ${slideIndex === index ? "" : "hidden"}`}
+                className={`animate-fade ${noBackground ? "" : "rounded-3xl bg-primary bg-hero bg-cover bg-center"} ${slideIndex === index ? "" : "hidden"}`}
               >
                 <img
                   src={imgURL}
