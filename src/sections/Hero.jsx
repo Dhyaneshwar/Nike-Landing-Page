@@ -19,7 +19,7 @@ const Hero = () => {
           </span>
           <br />
           <span className="relative inline-block transition-all hover:before:absolute hover:before:-inset-0 hover:before:-bottom-3 hover:before:z-20 hover:before:block hover:before:-skew-y-3 hover:before:bg-pink-500">
-            <span className="relative z-30 mt-3 inline-block text-coral-red hover:text-white">
+            <span className="relative z-30 mt-3 inline-block animate-bounce text-coral-red hover:text-white">
               Nike
             </span>
           </span>{" "}
